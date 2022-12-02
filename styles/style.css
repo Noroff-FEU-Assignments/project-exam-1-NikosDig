@@ -1,0 +1,137 @@
+:root {
+    --lightBlue: #49b0d9;
+    --mainbgcolor: #1E2631;
+    --forms: #2a343e;
+    --text: #fff;
+}
+
+body {
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+    background-color: var(--mainbgcolor);
+    color: var(--text);
+    font-family: poppins,Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/*       cta         */
+.cta {
+    background-color: var(--lightBlue);
+    color: var(--text);
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+/*       nav        */
+.active {
+    text-decoration: underline;
+}
+header {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 1vw;
+}
+.hero  img{
+    width: 100%;
+    height: 80vh;
+    opacity: 0.25;
+    mix-blend-mode: luminosity;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo a  {
+    font-weight: 900;
+    font-size: 74px;
+    text-decoration: none;
+    color: var(--lightBlue);
+}
+nav {
+    display: none;
+    margin-right: 20px;
+    position: fixed;
+    top: 100px;
+    right: -15px;
+    z-index: 100;
+    border-radius: 30px;
+    background-color: var(--mainbgcolor);
+}
+.posfix {
+    position: relative;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 10px 25px
+}
+nav li {
+    display: block;
+    padding: 10px;
+}
+nav a{
+    color: var(--text);
+    padding: 10px;
+    font-size: 1.3rem;
+}
+#hamburger {
+    display: none;
+}
+#hamburger:checked ~ nav {
+    display: block;
+}
+header label {
+    cursor: pointer;
+    margin-right: 20px;
+    position: fixed;
+    right: 10px;
+    top: 60px;
+}
+header label span {
+    display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: var(--text);
+  border-radius: 3px;
+  z-index: 1;
+}
+
+/*      welcome section with main header        */
+.blue {
+    color: var(--lightBlue);
+}
+h1 {
+    font-size: 3.5rem;
+}
+.welcome {
+    text-align: left;
+    margin-left: 8vw;
+}
+
+
+
+
+@media (min-width: 800px) {
+    nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    .posfix {
+        position: fixed;
+        right: 20px;
+        top: 40px;
+    }
+    header label {
+        display:none;
+    }
+}
