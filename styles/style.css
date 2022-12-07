@@ -16,6 +16,10 @@ body {
 a {
     text-decoration: none;
 }
+.heading {
+    color: var(--lightBlue);
+    font-size: 3rem;
+}
 /*       cta         */
 .cta {
     background-color: var(--lightBlue);
@@ -113,7 +117,96 @@ h1 {
     text-align: left;
     margin-left: 8vw;
 }
+.welcome p {
+    font-size: 2rem;
+}
+.subscribe {
+    margin: 5vw 0;
+}
 
+/*           featured section           */
+.featured {
+    margin: 10vw auto;
+}
+.featured h2,
+.latest-posts h2 {
+    width: 90%;
+    border-bottom: 2px solid var(--lightBlue);
+    margin-left: 2vw;
+}
+.featured-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured-container a {
+    width: 95%;
+}
+/*          featured section cards           */
+.card {
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    background-image: url("../assets/pictures/the-colossus-of-rhodes_u-l-q1nkce80.jpg");
+    background-size: cover;
+  }
+  
+  .card-info {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: var(--lightBlue);
+    color: var(--text);
+    transform: translateY(100%)
+      translateY(-88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  /* .card-info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%)
+      translateY(88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  } */
+  
+  .card:hover .card-info,
+  .card:hover .card-info:before {
+    transform: translateY(0) translateZ(0);
+  }
+  
+  .card-title {
+    margin: 0;
+    padding: 12px;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--text);
+    text-align: center;
+    border-bottom: 1px solid var(--text);
+  }
+  
+  .card-description {
+    margin: 0;
+    padding: 2rem;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
 
 
 
@@ -127,11 +220,23 @@ h1 {
         flex-direction: row;
     }
     .posfix {
-        position: fixed;
+        position: absolute;
         right: 20px;
         top: 40px;
     }
     header label {
         display:none;
     }
+}
+@media (min-width: 850px) {
+    .featured-container {
+        flex-direction: row;
+    }
+    .featured-container a {
+        width: 30%;
+    }
+    .card-title {
+        font-size: 1.8rem;
+        padding: 24px;
+      }
 }
