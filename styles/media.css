@@ -1,4 +1,11 @@
 /*          media queries             */
+@media (min-width: 500px) {
+    .subscribe-here input {
+        font-size: 1.3rem;
+        width: auto;
+    }
+}
+
 @media (min-width:500px) {
     .card {
         width: 350px;
@@ -32,6 +39,12 @@
     }
     header label {
         display:none;
+    }
+    .subscribe-here {
+        flex-direction: row;
+    }
+    .text-align-left-center {
+        text-align: left;
     }
 }
 @media (min-width: 850px) {

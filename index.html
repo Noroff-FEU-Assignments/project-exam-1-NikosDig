@@ -109,12 +109,6 @@
         <h2 class="heading">Our latest posts</h2>
         <div class="slider-container">
           <div class="slider">
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-            <a href="#slide-5">5</a>
-
             <div class="slides">
               <div id="slide-1">
                 <a href="">
@@ -202,8 +196,26 @@
                 </a>
               </div>
             </div>
+            <a class="sliderButtons black" href="#slide-1">1</a>
+            <a class="sliderButtons" href="#slide-2">2</a>
+            <a class="sliderButtons" href="#slide-3">3</a>
+            <a class="sliderButtons" href="#slide-4">4</a>
+            <a class="sliderButtons" href="#slide-5">5</a>
           </div>
         </div>
+      </section>
+      <section class="subscribe-here">
+        <h2 class="heading text-align-left-center">Subscribe to new posts</h2>
+        <form action="post">
+          <label for="email"></label>
+          <input
+            type="mail"
+            id="subscribe-mail"
+            name="subscribe-mail"
+            placeholder="Your email here"
+          />
+          <button class="cta">Subscribe</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -211,5 +223,6 @@
       <div><a href="">About</a></div>
       <div><a href="">Blogs</a></div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 :root {
     --lightBlue: #49b0d9;
+    --hover-cta: #306d85;
     --mainbgcolor: #1E2631;
     --forms: #2a343e;
     --text: #fff;
@@ -26,6 +27,12 @@ a {
     color: var(--text);
     border-radius: 50px;
     padding: 10px 30px;
+    cursor: pointer;
+    border-color: var(--lightBlue);
+}
+.cta:hover {
+    background-color: var(--hover-cta);
+    border-color: var(--hover-cta);
 }
 /*           nav            */
 .active {
@@ -34,7 +41,6 @@ a {
 header {
     display: flex;
     align-items: flex-end;
-    width: 100%;
     margin: 1vw;
 }
 .hero  img{
@@ -110,12 +116,13 @@ header label span {
 footer {
     display: flex;
     justify-content: space-around;
-    margin: 6rem 0 3rem 0;
+    margin: 2rem auto;
     border-top: 2px solid #707070;
     padding-top: 30px;
+    width: 90%;
 }
 footer a {
     color: var(--text);
-    font-size: 2rem;
+    font-size: 1.1rem;
     padding: 20px;
 }
