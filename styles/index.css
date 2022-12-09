@@ -1,7 +1,5 @@
 /*      welcome section with main header        */
-.blue {
-    color: var(--lightBlue);
-}
+
 h1 {
     font-size: 3rem;
 }
@@ -89,7 +87,7 @@ h1 {
     text-align: center;
   }
 
-  /*            lates post section with slider/carousel             */
+  /*            latest post section with slider/carousel             */
   .slider-container {
     display: flex;
     justify-content: center;

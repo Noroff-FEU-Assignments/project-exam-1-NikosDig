@@ -16,7 +16,8 @@
     .slider {
         width: 350px;
     }
-    h1 {
+    h1,
+    .heading {
         font-size: 3.5rem;
     }
     .welcome p {

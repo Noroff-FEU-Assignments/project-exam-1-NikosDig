@@ -13,13 +13,29 @@ body {
     background-color: var(--mainbgcolor);
     color: var(--text);
     font-family: poppins,Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 a {
     text-decoration: none;
+    color: var(--text);
 }
 .heading {
     color: var(--lightBlue);
     font-size: 3rem;
+}
+/*          generic commom classes           */
+.blue {
+    color: var(--lightBlue);
+}
+.active {
+    text-decoration: underline;
+}
+/*          bredcrumbs           */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2vw;
 }
 /*           cta             */
 .cta {
@@ -28,16 +44,13 @@ a {
     border-radius: 50px;
     padding: 10px 30px;
     cursor: pointer;
-    border-color: var(--lightBlue);
+    border-color: transparent;
 }
 .cta:hover {
     background-color: var(--hover-cta);
-    border-color: var(--hover-cta);
+    border-color: transparent;
 }
 /*           nav            */
-.active {
-    text-decoration: underline;
-}
 header {
     display: flex;
     align-items: flex-end;
@@ -125,4 +138,5 @@ footer a {
     color: var(--text);
     font-size: 1.1rem;
     padding: 20px;
+    letter-spacing: 0;
 }

@@ -1,0 +1,63 @@
+#special-hero {
+    opacity: 0.1;
+    height: 90vh;
+}
+.contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-forms h1 {
+    margin: 0px;
+}
+.contact-forms form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.contact-forms input {
+    margin: 20px auto;
+    width: 50vw;
+    background-color: var(--forms);
+    border:1px solid rgba(255, 255, 255, 0.2);;
+    border-radius: 100px;
+    height: 6vh;
+    text-align: center;
+    color: var(--text);
+    outline: 0;
+    cursor: pointer;
+}
+.contact-forms input::placeholder,
+.contact-forms textarea::placeholder {
+    color: var(--text);
+    opacity: 0.4;
+  }
+
+  .contact-forms textarea {
+    width: 50vw;
+    height: 7vh;
+    margin: 10px;
+    border:1px solid rgba(255, 255, 255, 0.2);;
+    border-radius: 0 20px;
+    background-color: var(--forms);
+    color: var(--text);
+    text-align: center;
+    cursor: pointer;
+  }
+  .contact-forms textarea:focus {
+    text-align: left;
+    outline: 1px ridge;
+  }
+  .contact-forms input:focus {
+    outline: 1px ridge;
+  }
+  .contact-forms input:hover,
+  .contact-forms textarea:hover {
+    background-color: var(--mainbgcolor);
+  }
+
+.contact-cta {
+    margin: 20px;
+}

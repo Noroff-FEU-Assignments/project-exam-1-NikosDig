@@ -1,0 +1,21 @@
+.about-header-and-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.about-header-and-paragraph h1 {
+ margin: 0;
+}
+.about-header-and-paragraph h3 {
+    font-size: 2.5rem;
+    margin: 10px;
+}
+.about-header-and-paragraph p {
+    font-size: 1.5rem;
+    margin: 20px 40px;
+}
+.about-cta-container {
+    margin: 2rem;
+}
