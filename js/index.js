@@ -1,8 +1,10 @@
-const blackOrNot = document.querySelectorAll(".sliderButtons");
+const sliderButtonsChangeColor = document.querySelectorAll(".sliderButtons");
 
-blackOrNot.forEach((target) => {
+sliderButtonsChangeColor.forEach((target) => {
   target.addEventListener("click", () => {
-    target.classList.remove("black");
+    [...target.parentElement.children].forEach((x) =>
+      x.classList.remove("black")
+    );
     target.classList.add("black");
   });
 });
