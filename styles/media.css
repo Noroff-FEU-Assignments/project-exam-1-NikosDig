@@ -29,6 +29,7 @@
         display: block;
         position: static;
         background-color: transparent;
+        border: 0;
     }
     nav ul {
         flex-direction: row;

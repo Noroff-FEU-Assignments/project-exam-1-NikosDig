@@ -41,51 +41,8 @@ h1 {
     width: 95%;
 }
 /*          featured section cards           */
-.card {
-    border-radius: 16px;
-    margin: 0 auto;
-    width: 300px;
-    max-width: 100%;
-    min-height: 500px;
-    overflow: hidden;
-    background-image: url("../assets/pictures/the-colossus-of-rhodes_u-l-q1nkce80.jpg");
-    background-size: cover;
-  }
-  
-  .card-info {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-color: var(--lightBlue);
-    color: var(--text);
-    transform: translateY(100%)
-      translateY(-88px)
-      translateZ(0);
-    transition: transform 0.5s ease-out;
-  }
-  
-  .card:hover .card-info,
-  .card:hover .card-info:before {
-    transform: translateY(0) translateZ(0);
-  }
-  
-  .card-title {
-    margin: 0;
-    padding: 12px;
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--text);
-    text-align: center;
-    border-bottom: 1px solid var(--text);
-  }
-  
-  .card-description {
-    margin: 0;
-    padding: 2rem;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-  }
+
+/* this sectin has been moved to index css bc of list of post page that share css  */
 
   /*            latest post section with slider/carousel             */
   .slider-container {
