@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in || Wonders of the world blog</title>
+    <meta name="description" content="Sign in to your acount" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="hero" id="special-hero-sign-in">
+        <img
+          src="assets/pictures/Akropolis_Sanctuary.jpg"
+          alt="representation of the ancient acropolis"
+        />
+      </div>
+      <div class="logo" title="Back to Home page">
+        <a href="index.html">WW</a>
+      </div>
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger" aria-label="main-menu">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span
+      ></label>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" title="Home page">Home</a>
+          </li>
+          <li><a href="about.html" title="About page">About</a></li>
+          <li><a href="posts.html" title="Posts page">Posts</a></li>
+          <li><a href="contact.html" title="Contact page">Contact</a></li>
+          <li>
+            <a class="cta posfix active" href="sign.html" title="Sign in page"
+              >Sign in</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="sign-in-container">
+        <h1 class="heading">Sign in to the blog</h1>
+        <form action="post">
+          <input
+            type="mail"
+            name="sign-in-mail"
+            id="sign-in-mail"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            id="sign-in-password"
+            name="sign-in-password"
+            placeholder="Password"
+          />
+          <button class="cta sign-in-button">Sign in</button>
+          <p>dont have an account yet? <a href="">sign up here</a></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div><a href="contact.html" title="Contact page">Contact</a></div>
+      <div><a href="about.html" title="About page">About</a></div>
+      <div><a href="posts.html" title="Posts page">Posts</a></div>
+    </footer>
+  </body>
+</html>

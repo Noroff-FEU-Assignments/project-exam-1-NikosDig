@@ -1,23 +1,29 @@
+/*      Contact page AND sign in page shared css       */
+
 #special-hero {
     opacity: 0.1;
     height: 90vh;
 }
-.contact-forms {
+.contact-forms,
+.sign-in-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contact-forms h1 {
+.contact-forms h1,
+.sign-in-container h1 {
     margin: 0px;
 }
-.contact-forms form {
+.contact-forms form,
+.sign-in-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 
 }
-.contact-forms input {
+.contact-forms input,
+.sign-in-container input {
     margin: 20px auto;
     width: 50vw;
     background-color: var(--forms);
@@ -30,7 +36,8 @@
     cursor: pointer;
 }
 .contact-forms input::placeholder,
-.contact-forms textarea::placeholder {
+.contact-forms textarea::placeholder,
+.sign-in-container input::placeholder {
     color: var(--text);
     opacity: 0.4;
   }
@@ -50,14 +57,34 @@
     text-align: left;
     outline: 1px ridge;
   }
-  .contact-forms input:focus {
+  .contact-forms input:focus,
+  .sign-in-container input:focus {
     outline: 1px ridge;
   }
   .contact-forms input:hover,
-  .contact-forms textarea:hover {
+  .contact-forms textarea:hover,
+  .sign-in-container input:hover {
     background-color: var(--mainbgcolor);
   }
 
 .contact-cta {
     margin: 20px;
+}
+
+ /*      sign in spesific css      */
+
+.sign-in-container * {
+  text-align: center;
+}
+.sign-in-container p {
+  font-size: 0.7rem;
+}
+.sign-in-container p a {
+  text-decoration: underline;
+}
+.sign-in-container button {
+  margin-top: 30px;
+}
+.sign-in-container {
+  margin-bottom: 10vh;
 }
