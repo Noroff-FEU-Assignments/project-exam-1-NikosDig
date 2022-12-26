@@ -1,0 +1,52 @@
+#details-modified-hero img {
+    opacity: 0.1;
+    height: 100vh;
+}
+
+.blogSpesificSection {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat( 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 7vh 5vw;
+}
+
+.blogSpesificSection h1 {
+    text-align: center;
+}
+
+.detailsImageContainer {
+    cursor: pointer;
+}
+.detailsImageContainer img {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.mianPostContent {
+    margin: 7vh 5vw;
+}
+
+/* similar posts section */
+.similarPosts h1 {
+    border-bottom: 1px solid var(--lightBlue);
+}
+.similarPostsContainer {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 95%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+
+/* details img enlarge class to toggle */
+
+.enlarge {
+    display: block;
+    width: 95%;
+    height: 95%;
+}

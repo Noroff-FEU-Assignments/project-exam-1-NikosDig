@@ -1,21 +1,28 @@
-/*      Contact page AND sign in page shared css       */
+/*      Contact page AND sign in AND sign up page shared css       */
 
 #special-hero {
     opacity: 0.1;
     height: 90vh;
 }
+#special-hero-sign-in img,
+#special-hero-sign-up img {
+  height: 100vh;
+}
 .contact-forms,
-.sign-in-container {
+.sign-in-container,
+.sign-up-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .contact-forms h1,
-.sign-in-container h1 {
+.sign-in-container h1,
+.sign-up-container h1 {
     margin: 0px;
 }
 .contact-forms form,
-.sign-in-container form {
+.sign-in-container form,
+.sign-up-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +30,8 @@
 
 }
 .contact-forms input,
-.sign-in-container input {
+.sign-in-container input,
+.sign-up-container input {
     margin: 20px auto;
     width: 50vw;
     background-color: var(--forms);
@@ -37,7 +45,8 @@
 }
 .contact-forms input::placeholder,
 .contact-forms textarea::placeholder,
-.sign-in-container input::placeholder {
+.sign-in-container input::placeholder,
+.sign-up-container input::placeholder {
     color: var(--text);
     opacity: 0.4;
   }
@@ -58,12 +67,14 @@
     outline: 1px ridge;
   }
   .contact-forms input:focus,
-  .sign-in-container input:focus {
+  .sign-in-container input:focus,
+  .sign-up-container input:focus {
     outline: 1px ridge;
   }
   .contact-forms input:hover,
   .contact-forms textarea:hover,
-  .sign-in-container input:hover {
+  .sign-in-container input:hover,
+  .sign-up-container input:hover {
     background-color: var(--mainbgcolor);
   }
 
@@ -71,20 +82,22 @@
     margin: 20px;
 }
 
- /*      sign in spesific css      */
+ /*      sign in AND sign up  spesific css     */
 
-.sign-in-container * {
+.sign-in-container,
+.sign-up-container * {
   text-align: center;
+  margin-bottom: 10vh;
 }
-.sign-in-container p {
+.sign-in-container p,
+.sign-up-container p {
   font-size: 0.7rem;
 }
-.sign-in-container p a {
+.sign-in-container p a,
+.sign-up-container p a {
   text-decoration: underline;
 }
-.sign-in-container button {
+.sign-in-container button,
+.sign-up-container button {
   margin-top: 30px;
-}
-.sign-in-container {
-  margin-bottom: 10vh;
 }

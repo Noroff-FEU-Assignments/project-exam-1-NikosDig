@@ -127,7 +127,7 @@ header label span {
   z-index: 1;
 }
 
-/*          card, card details and all that it has to do with the card section           */
+/*          card, card details and all that has to do with the card section           */
 .card {
     border-radius: 16px;
     margin: 0 auto;
