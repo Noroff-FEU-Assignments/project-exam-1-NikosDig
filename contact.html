@@ -65,7 +65,11 @@
       <!-- contact forms -->
       <section class="contact-forms">
         <h1 class="heading">Contact</h1>
-        <form action="post">
+        <h2 class="success">FORM SENDED SUCCESSFULLY</h2>
+        <form action="post" id="contactForm">
+          <div class="msg name-msg">
+            <p>Should be more than 5 characters long</p>
+          </div>
           <input
             type="text"
             id="contact-name"
@@ -74,6 +78,9 @@
             title="Please fill this with your name"
             required
           />
+          <div class="msg email-msg">
+            <p>Must be a valid email address</p>
+          </div>
           <input
             type="mail"
             id="contact-mail"
@@ -82,6 +89,9 @@
             title="Please fill this with your email"
             required
           />
+          <div class="msg subject-msg">
+            <p>Should be more than 15 characters long</p>
+          </div>
           <input
             type="text"
             id="contact-subject"
@@ -90,6 +100,9 @@
             title="Please fill this with your subject title"
             required
           />
+          <div class="msg details-msg">
+            <p>Should be more than 25 characters long</p>
+          </div>
           <textarea
             name="contact-message"
             id="contact-message"
@@ -109,5 +122,6 @@
       <div><a href="about.html" title="About page">About</a></div>
       <div><a href="posts.html" title="Blogs page">Posts</a></div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
