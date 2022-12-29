@@ -22,15 +22,18 @@
 .detailsImageContainer img {
     border-radius: 30px;
     width: 100%;
+    transition: all 0.4s ease-in-out 0.2s;
+    z-index: 100;
 }
 
-.mianPostContent {
+.mainPostContent {
     margin: 7vh 5vw;
 }
 
 /* similar posts section */
 .similarPosts h1 {
     border-bottom: 1px solid var(--lightBlue);
+    padding-left: 10px;
 }
 .similarPostsContainer {
     display: flex;
@@ -47,6 +50,11 @@
 
 .enlarge {
     display: block;
-    width: 95%;
+    /* transform: scale(1.5);
+    transition: transform 0.25s ease ; */
     height: 95%;
+    width: 90% !important;
+    position: fixed;
+    right: 15px;
+    top: 10px;
 }

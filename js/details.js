@@ -1,25 +1,12 @@
 const detailsMainImg = document.querySelector(".detailsPageImg");
-const body = document.querySelector("body");
 
+// make the image biger on click by the user
 detailsMainImg.addEventListener("click", () => {
   detailsMainImg.classList.toggle("enlarge");
 });
-
-// function enlargeImg() {
-//   detailsMainImg.style.transform = "scale(1.5)";
-//   detailsMainImg.style.transition = "transform 0.25s ease";
-// }
-
-// function imgReset() {
-//   detailsMainImg.style.transform = "scale(1)";
-//   detailsMainImg.style.transition = "transform 0.25s ease";
-// }
-// window.addEventListener("click", (event) => {
-//   if (event.target == body) {
-//     console.log(event.target);
-//     detailsMainImg.style.transform = "scale(1)";
-//     detailsMainImg.style.transition = "transform 0.25s ease";
-//   } else {
-//     return;
-//   }
-// });
+// make the image smaller if the user clicks outside of the image
+window.onclick = function (e) {
+  if (e.target != detailsMainImg) {
+    detailsMainImg.classList.remove("enlarge");
+  }
+};
