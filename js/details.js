@@ -7,6 +7,9 @@ const id = params.get("id");
 const detailUrl =
   "https://nikosdigalakis.com/world-of-wonders/wp-json/wp/v2/posts/" + id;
 console.log(id);
+const worldOfWondersURL =
+  "https://nikosdigalakis.com/world-of-wonders/wp-json/wp/v2/posts?_embed";
+const similarPostsContainer = document.querySelector(".similarPostsContainer");
 
 async function getPostsDetails(url) {
   try {
@@ -53,3 +56,50 @@ async function getPostsDetails(url) {
 }
 
 getPostsDetails(detailUrl);
+
+async function getPosts(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(similarPostsContainer);
+
+    similarPostsContainer.innerHTML = ``;
+
+    let shorted = data.sort(() => Math.random() - Math.random()).slice(0, 3);
+    console.log(shorted);
+
+    for (let i = 0; i <= shorted.length; i++) {
+      const cardImg = shorted[i].better_featured_image.source_url;
+      similarPostsContainer.innerHTML += `
+      <a href="details.html?id=${shorted[i].id}" title="Read about ${shorted[i].title.rendered}">
+      <div class="card" style="background: url(${cardImg})no-repeat center">
+        <div class="card-info">
+          <h3 class="card-title">${shorted[i].title.rendered}</h3>
+          <p class="card-description">
+              ${data[i].excerpt.rendered}
+          </p>
+        </div>
+      </div>
+    </a>
+      `;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getPosts(worldOfWondersURL);
+
+// const cardImg = data[i].better_featured_image.source_url;
+// similarPostsContainer.innerHTML += `
+//       <a href="details.html?id=${data[i].id}" title="Read about ${data[i].title.rendered}">
+//       <div class="card" style="background: url(${cardImg})no-repeat center">
+//         <div class="card-info">
+//           <h3 class="card-title">${data[i].title.rendered}</h3>
+//           <p class="card-description">
+//               ${data[i].excerpt.rendered}
+//           </p>
+//         </div>
+//       </div>
+//     </a>
+//       `;
