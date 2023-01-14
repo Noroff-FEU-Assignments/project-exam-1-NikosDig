@@ -10,13 +10,15 @@ async function getPosts(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
 
     postsContainer.innerHTML = ``;
     numberOfPostsHeading.innerHTML = ``;
+
     for (let i = 0; i <= data.length; i++) {
       const cardImg = data[i].better_featured_image.source_url;
       postsContainer.innerHTML += `
-            <a href="" title="Read about ${data[i].title.rendered}">
+            <a href="details.html?id=${data[i].id}" title="Read about ${data[i].title.rendered}">
             <div class="card" style="background: url(${cardImg})no-repeat center">
               <div class="card-info">
                 <h3 class="card-title">${data[i].title.rendered}</h3>

@@ -27,7 +27,7 @@ async function getPosts(url) {
     if (data[i].categories[0] === 3) {
       const cardImg = data[i].better_featured_image.source_url;
       featuredContainer.innerHTML += `
-      <a href="" title="Read about ${data[i].title.rendered}">
+      <a href="details.html?id=${data[i].id}" title="Read about ${data[i].title.rendered}">
       <div class="card" style="background: url(${cardImg})no-repeat center">
         <div class="card-info">
           <h3 class="card-title">${data[i].title.rendered}</h3>
@@ -43,7 +43,7 @@ async function getPosts(url) {
       idCounter++;
       slides.innerHTML += `
       <div id="slide-${idCounter}">
-      <a href="" title="Read about ${data[i].title.rendered}">
+      <a href="details.html?id=${data[i].id}" title="Read about ${data[i].title.rendered}">
         <div class="card" style="background: url(${cardImg})no-repeat center">
           <div class="card-info">
             <h3 class="card-title">${data[i].title.rendered}</h3>
