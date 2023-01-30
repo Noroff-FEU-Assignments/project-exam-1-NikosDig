@@ -158,8 +158,8 @@ header label span {
   
   .card-title {
     margin: 0;
-    padding: 18px;
-    font-size: 2rem;
+    padding: 20px 0 40px 0;
+    font-size: 1.7rem;
     line-height: 1;
     color: var(--text);
     text-align: center;
