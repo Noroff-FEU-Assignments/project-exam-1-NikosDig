@@ -42,4 +42,5 @@ getPosts(worldOfWondersURL);
 // on click it adds the 20 per page parm on the url and updates the number of posts heading to show the total number of posts
 loadMoreButton.addEventListener("click", () => {
   getPosts(perPage20);
+  loadMoreButton.style.display = "none";
 });

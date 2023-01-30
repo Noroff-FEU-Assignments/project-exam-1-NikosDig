@@ -48,7 +48,7 @@
     margin: 20px auto;
     width: 50vw;
     background-color: var(--forms);
-    border:1px solid rgba(255, 255, 255, 0.2);;
+    border:2px solid rgba(255, 255, 255, 0.2);;
     border-radius: 100px;
     height: 6vh;
     text-align: center;
@@ -78,11 +78,13 @@
   .contact-forms textarea:focus {
     text-align: left;
     outline: 1px ridge;
+    font-size: 20px;
   }
   .contact-forms input:focus,
   .sign-in-container input:focus,
   .sign-up-container input:focus {
     outline: 1px ridge;
+    font-size: 20px;
   }
   .contact-forms input:hover,
   .contact-forms textarea:hover,

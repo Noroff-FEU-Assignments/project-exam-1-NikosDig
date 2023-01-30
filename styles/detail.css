@@ -53,9 +53,9 @@
     display: block;
     /* transform: scale(1.5);
     transition: transform 0.25s ease ; */
-    height: 95%;
+    height: 80%;
     width: 90% !important;
     position: fixed;
     right: 15px;
-    top: 10px;
+    top: 50px;
 }

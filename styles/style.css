@@ -45,6 +45,7 @@ a {
     padding: 10px 30px;
     cursor: pointer;
     border-color: transparent;
+    font-size: 22px;
 }
 .cta:hover {
     background-color: var(--hover-cta);
@@ -159,7 +160,7 @@ header label span {
   .card-title {
     margin: 0;
     padding: 20px 0 40px 0;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1;
     color: var(--text);
     text-align: center;
@@ -172,6 +173,7 @@ header label span {
     padding: 5px 0 0 7px;
     font-size: 18px;
     line-height: 1.5;
+    text-align: left;
   }
 
 /*              footer               */
