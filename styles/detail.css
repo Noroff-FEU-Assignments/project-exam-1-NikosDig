@@ -38,7 +38,7 @@
 }
 .similarPostsContainer {
     display: flex;
-    gap: 5px;
+    gap: 12px;
     flex-wrap: wrap;
     width: 95%;
     align-items: center;
